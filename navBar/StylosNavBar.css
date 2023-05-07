@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.contain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+.lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  color: white;
+}
+.btn {
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  /* padding-right: 3rem; */
+}
+.log {
+  height: 7rem;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn a:hover {
+  color: #C10001;
+  scale: 1.2;
+  transition: 1s;
+}
+.sreach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buscador{
+    border-radius: 8px;
+    border-color: #C10001;
+}
+.loop {
+  padding-top: 10px;
+}
+.carrito {
+  height: 2rem;
+}
+.carrito:hover {
+  scale: 1.2;
+  transition: 1s;
+}
+@media (max-width: 1070px) {
+  .sreach {
+    display: none;
+  }
+  .btn {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 726px) {
+.btn{
+  width: 100%;
+}
+.contain{
+  width: 100%;
+  padding: 0;
+}
+.name{
+  display: none;
+}
+.btn a{
+  font-size: 15px;
+}
+.carrito{
+  padding-top: 10px;
+}
+.contain{
+  justify-content: center;
+  align-items: center;
+}
+}
