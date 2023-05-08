@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primer-color: #31302F;
+    --segundo-color: #764C4C;
+    --tercer-color: #9A9693;
+    --cuarto-color: #F6F6F6;
+    --quinto-color: #C10001;
+}
+
+
+.container_presentation{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 75rem;
+    background-color: var(--segundo-color);
+}
+.titulo_page{
+    font-size: 2.5rem;
+    color: var(--primer-color);
+    margin-bottom: 1rem;
+}
+.container_team{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--segundo-color);
+}
+
+.container_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.card_item{
+    display: flex;
+    justify-content: center;
+    width: 18.75rem;
+    height: 18.75rem;
+    background-color: var(--cuarto-color);
+    margin: 2rem;
+    border-radius: 10%;
+    border: 0.1rem solid var(--primer-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--primer-color);
+}
+
+.card_img{
+    display: flex;
+    justify-content: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;   
+    border: 0.1rem solid var(--primer-color);
+    margin: 0 auto;
+}
+
+.cards_text{
+    text-align: center;
+    padding: 2rem;
+}
