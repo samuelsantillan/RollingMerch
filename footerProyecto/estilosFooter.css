@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+footer {
+    background: black;
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+}
+
+.contenidoFooter {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
