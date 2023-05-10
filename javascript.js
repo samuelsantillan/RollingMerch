@@ -1,3 +1,5 @@
+//Pagina admin
+
 let productos = [];
 
 //Obtener los elementos del DOM
@@ -116,3 +118,5 @@ if (productosLocalStorage) {
   productos = productosLocalStorage;
   mostrarProductos();
 }
+
+//FIN PAGINA ADMIN
