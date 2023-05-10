@@ -20,6 +20,9 @@ body {
 .name {
   color: white;
 }
+.abrir-menu{
+  display: none;
+}
 .btn {
   /* background-color: white; */
   display: flex;
@@ -70,29 +73,20 @@ body {
     width: 100%;
     justify-content: space-around;
   }
+.abrir-menu{
+  display: none;
+}
 }
 @media (max-width: 726px) {
 .btn{
-  width: 100%;
-}
-.contain{
-  width: 100%;
-  padding: 0;
-}
-.name{
   display: none;
 }
-.btn a{
-  font-size: 15px;
-}
-.carrito{
-  padding-top: 10px;
-}
-.contain{
-  justify-content: center;
-  align-items: center;
+.abrir-menu{
+  display: block;
+  margin-right: 2rem;
 }
 }
+
 a.loop img {
   height: 1.5rem;
   margin-left: 0.5rem;
