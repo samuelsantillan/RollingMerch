@@ -4,11 +4,12 @@ body{
     margin: 0 !important;
 }
 
-.form-admin{
+.form-colors{
     color:  #C10001 !important;
     border-radius: 1px !important;
     border-color:  #C10001 !important;
-  }
+    
+}
   
 .admin-inputs{
     background-color:black !important;
@@ -19,3 +20,4 @@ body{
     background-color:#9A9693!important;
     color:#C10001 !important;
 }
+
