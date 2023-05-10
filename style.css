@@ -1,0 +1,9 @@
+body{
+    background-color:#764C4C !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+}
+
+.titulo{
+    font-size: 2vh;
+}
