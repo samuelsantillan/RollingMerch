@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.logo {
+  height: 7rem;
+}
+.intro {
+  display: flex;
+  align-items: center;
+}
+.name {
+  color: white;
+}
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carrito {
+  height: 2rem;
+  margin-top: 15px;
+}
+input.buscador:focus-visible {
+  outline: none;
+}
+.nav a:hover {
+  scale: 1.1;
+  color: #c10001;
+  transition: 300ms ease-in;
+}
+
+.sreach {
+  display: flex;
+  margin-top: 15px;
+}
+.lupa {
+  padding-left: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.buscador {
+  padding-left: 0.5rem;
+  border-radius: 8px;
+  border-color: #c10001;
+  height: 25px;
+}
+.nav-list {
+  margin-right: 3rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.abrir-menu {
+  display: none;
+}
+.cerrar-menu {
+  display: none;
+}
+@media (max-width: 882px) {
+  .cerrar-menu {
+    display: none;
+  }
+  .name {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .logo{
+    height: 5rem;
+  }
+  .name {
+    display: block;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    background-color: black;
+    border: 0;
+    display: block;
+    margin-right: 2rem;
+  }
+  .cerrar-menu{
+    background-color: transparent;
+  }
+  .x {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+
+    width: 18rem;
+    top: 5rem;
+    right: 0;
+    position: absolute;
+    background-color:#31302F;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    
+  }
+  .hamburguesa{
+    height: 2.5rem;
+  }
+  .name {
+    display: none;
+  }
+  .ingresar {
+    margin-left: 50px;
+  }
+  .registro {
+    margin-left: 50px;
+  }
+  .carrito {
+    margin-left: 50px;
+  }
+  .sreach {
+    margin-left: 50px;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .buscador{
+    border-radius: 25px ;
+  }
+}
