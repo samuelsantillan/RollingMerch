@@ -12,7 +12,6 @@ const descripcionProducto = document.getElementById("descripcionProducto");
 const imagenProducto = document.getElementById("urlProducto");
 const addProductoButton = document.getElementById("addProductoButton");
 
-
 //Funcion para agregar productos
 
 addProductoButton.addEventListener("click", (e) => {
@@ -26,35 +25,32 @@ addProductoButton.addEventListener("click", (e) => {
   const editId = agregarProductosForm.dataset.editId;
   if (nombre == "" && precio == "" && descripcion == "" && imagen == "") {
     alert("Ningun campo puede estar vacio");
-  } else{
-
-  
-  if (mode === "add") {
-    const id = uuidv4();
-    const producto = { id, nombre, precio, descripcion, imagen };
-    productos.push(producto);
-    alert("Producto agregado");
-  } else if (mode === "edit") {
-    const index = productos.findIndex((producto) => producto.id === editId);
-    if (index !== -1) {
-      const producto = productos[index];
-      producto.nombre = nombre;
-      producto.precio = precio;
-      producto.descripcion = descripcion;
-      producto.imagen = imagen;
-      alert("Producto editado");
+  } else {
+    if (mode === "add") {
+      const id = uuidv4();
+      const producto = { id, nombre, precio, descripcion, imagen };
+      productos.push(producto);
+      alert("Producto agregado");
+    } else if (mode === "edit") {
+      const index = productos.findIndex((producto) => producto.id === editId);
+      if (index !== -1) {
+        const producto = productos[index];
+        producto.nombre = nombre;
+        producto.precio = precio;
+        producto.descripcion = descripcion;
+        producto.imagen = imagen;
+        alert("Producto editado");
+      }
     }
+
+    //Limpiar el formulario
+    agregarProductosForm.reset();
+    agregarProductosForm.dataset.mode = "add";
+    addProductoButton.textContent = "Agregar";
+
+    //llamar a una funcion que actualiza la lista de productos
+    mostrarProductos();
   }
-
-
-  //Limpiar el formulario
-  agregarProductosForm.reset();
-  agregarProductosForm.dataset.mode = "add";
-  addProductoButton.textContent = "Agregar";
- 
-  //llamar a una funcion que actualiza la lista de productos
-  mostrarProductos();
-}
 });
 
 // Funcion para editar productos
@@ -66,7 +62,8 @@ listaProductos.addEventListener("click", (e) => {
     if (producto) {
       document.getElementById("nombreProducto").value = producto.nombre;
       document.getElementById("precioProducto").value = producto.precio;
-      document.getElementById("descripcionProducto").value = producto.descripcion;
+      document.getElementById("descripcionProducto").value =
+        producto.descripcion;
       document.getElementById("urlProducto").value = producto.imagen;
       // Setear el formulario para que este en modo editar
       agregarProductosForm.dataset.mode = "edit";
@@ -74,7 +71,6 @@ listaProductos.addEventListener("click", (e) => {
       agregarProductosForm.dataset.editId = idCapturado; // usar editId en vez de id
       // cambiar el texto del boton
       addProductoButton.textContent = "Editar";
-      
     }
   }
 });
@@ -84,7 +80,9 @@ listaProductos.addEventListener("click", (e) => {
 listaProductos.addEventListener("click", (e) => {
   if (e.target.classList.contains("delete")) {
     const idCapturado = e.target.dataset.id;
-    const index = productos.findIndex((producto) => producto.id === idCapturado);
+    const index = productos.findIndex(
+      (producto) => producto.id === idCapturado
+    );
     if (index !== -1) {
       productos.splice(index, 1);
       mostrarProductos();
@@ -123,7 +121,7 @@ function uuidv4() {
 // obtener los productos del local storage
 
 const productosLocalStorage = JSON.parse(localStorage.getItem("productos"));
- 
+
 if (productosLocalStorage) {
   productos = productosLocalStorage;
   mostrarProductos();
