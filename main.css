@@ -92,6 +92,9 @@ main {
 .titulo{
     color: #c10001;
 }
+body{
+    background-color: #31302f;
+}
 
 
 /*** MEDIA QUERIES ***/
