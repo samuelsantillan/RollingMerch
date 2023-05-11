@@ -13,7 +13,7 @@
 }
 
 body{
-    background-color: var(--tercer-color);
+    background-color: var(--primer-color) !important;
 }
 .contenedor_pre{
     display: flex;
@@ -21,22 +21,23 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--cuarto-color);
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 2rem;
     max-width: 90rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: var(--primer-color);
-    border: solid 0.1rem var(--tercer-color);
+    /*background: radial-gradient(circle, var(--primer-color) 0%, rgba(154,150,147,1) 100%);*/
+    border: solid 0.1rem var(--quinto-color);
     box-shadow: 0 0.5rem 1rem var(--primer-color);
 }
 .titulo_pagina{
     font-size: 2.5rem;
-    color: var(--cuarto-color);
+    color: var(--quinto-color);
     margin-bottom: 1rem;
 }
 .frase_pagina{
     font-size: 1.5rem;
-    color: var(--cuarto-color);
+    color: var(--quinto-color);
     margin-bottom: 1rem;
 }
 
@@ -54,11 +55,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     width: 18rem;
-    /*background-color: var(--tercer-color);*/
-    background: var(--primer-color);
-    background: radial-gradient(circle, var(--quinto-color) 0%, rgba(154,150,147,1) 100%);
+    background-color: var(--primer-color);
+    /*background: radial-gradient(circle, var(--primer-color) 0%, rgba(154,150,147,1) 100%);*/
     margin: 2rem;
-    /*border: solid 0.1rem var(--quinto-color);*/
+    border: solid 0.1rem var(--quinto-color);
     border-radius: 2rem;
     padding: 0.5rem;
     overflow: hidden;
@@ -67,7 +67,7 @@ body{
 
 .contenedor_item:hover{
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem var(--primer-color);
+    box-shadow: 0 0.5rem 1rem var(--cuarto-color);
 }
 
 .card_image{
@@ -80,7 +80,7 @@ body{
 }
 
 .card_texto{
-    color: var(--cuarto-color);
+    color: var(--quinto-color);
     text-align: center;
     margin: 0.5rem;
     font-size: 1rem;
@@ -99,7 +99,6 @@ body{
     height: 1.5rem;
     margin: 0.5rem;
     text-decoration: none;
-    color: var(--primer-color);
     transition: transform .2s; 
 }
 
