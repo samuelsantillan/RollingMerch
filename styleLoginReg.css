@@ -1,0 +1,101 @@
+.login-box{
+    background-color: transparent;
+}
+/* .user-box input{
+    border: none;
+    outline: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;    
+} */
+
+.user-box input:focus, select:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    border-color: #C10001;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.boton{    
+    box-sizing: border-box;    
+    position: relative;
+    color: black; 
+    background-color: #DDD6DB;
+} 
+
+.boton::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #C10001;
+    transition: all .3s;
+    box-shadow: 45px -43px #C10001;
+}
+
+.boton::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: #C10001;
+    transition: all .3s;
+    box-shadow: 434px 36px #C10001;
+}
+
+.boton:hover::before{
+    width: 100%;
+    box-shadow: 0 -43px #C10001;
+}
+.boton:hover::after{
+    height: 100%;
+    box-shadow: 434px 0 #C10001; 
+}
+
+.register-box input:focus, select:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    border-color: #C10001;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.regbtn{
+    background-color: #C10001;
+}
+
+#registerForm{
+    text-align: start;
+}
+.cascading-right {
+    margin-right: -50px;
+  }
+
+@media all and (min-width:600px) and (max-width:1023px){
+   .boton{
+       background-color: #C10001;
+       color: white
+   }  
+  }
+
+  @media screen and (max-width:599px){
+    .boton{
+        background-color: #C10001;
+        color: white
+    }   
+  }
+
+  @media (max-width: 991.98px) {
+    .cascading-right {
+      margin-right: 0;
+    }
+  }
