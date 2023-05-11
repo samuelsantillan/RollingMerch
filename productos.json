@@ -1,61 +1,61 @@
 [
     {
         "id": 1,
-        "producto": "Botella deportiva de aluminio reutilizable",        
+        "titulo": "Botella deportiva de aluminio reutilizable",        
         "precio": "2950",
         "cantidad": 9,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-22-at-18.45.49.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-22-at-18.45.49-500x500.jpeg"
         
     },
     {
        
         "id": 2,
-        "producto": "Gorra Roja RollingCode",        
+        "titulo": "Gorra Roja RollingCode",        
         "precio": "1800",
         "cantidad": 19,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-3-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-3-500x500.jpeg"
     },
     {
         
         "id": 3,
-        "producto": "Gorra negra RollingCode",        
+        "titulo": "Gorra negra RollingCode",        
         "precio": "1300",
         "cantidad": 19,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-500x500.jpeg"
     },
     {
         "id": 4,
-        "producto": "Libreta",        
+        "titulo": "Libreta",        
         "precio": "2000",
         "cantidad": 4,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.15.46-AM-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.15.46-AM-500x500.jpeg"
     },
     {
         "id": 5,
-        "producto": "Llaveros RollingCode",        
+        "titulo": "Llaveros RollingCode",        
         "precio": "300",
         "cantidad": 4,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.25.08-AM-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.25.08-AM-500x500.jpeg"
     },
     {
         "id": 6,
-        "producto": "Pines RollinCode BLANCO / NEGRO",        
+        "titulo": "Pines RollinCode BLANCO / NEGRO",        
         "precio": "650",
         "cantidad": 4,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2023/04/20230424_135552-500x500.jpg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2023/04/20230424_135552-500x500.jpg"
     },
     {
         "id": 7,
-        "producto": "Taza Coding",        
+        "titulo": "Taza Coding",        
         "precio": "2300",
         "cantidad": 14,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.43-AM-2-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.43-AM-2-500x500.jpeg"
     },
     {
         "id": 7,
-        "producto": "Taza No connection",        
+        "titulo": "Taza No connection",        
         "precio": "2300",
         "cantidad": 3,       
-        "img":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.44-AM-1-500x500.jpeg"
+        "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.44-AM-1-500x500.jpeg"
     }
 ]
