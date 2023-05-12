@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+}
+
+#navegador-index {
+  background-color: black !important;
+}
+.ingresar:hover {
+  scale: 1.2 !important;
+  transition: 300ms ease-in;
+  color: #c10001 !important;
+}
+.registro:hover {
+  scale: 1.2 !important;
+  transition: 300ms ease-in;
+  color: #c10001 !important;
+}
+.nav {
+  background-color: black !important;
+}
+
+.carrito {
+  height: 1.9rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  font-weight: bold !important;
+}
+
+.navegador {
+  background-color: white !important;
+}
+
+.busqueda {
+  background-color: white !important;
+  border-color: #c10001 !important;
+  color: #c10001 !important;
+}
+
+.busqueda::placeholder {
+  color: black !important;
+  opacity: 0.6 !important;
+}
+
+.buscar {
+  background-color: #c10001 !important;
+  border-color: white !important;
+}
+
+.login {
+  border-color: white !important;
+  background-color: #c10001 !important;
+}
+.login:hover {
+  scale: 1.1;
+  transition: 300ms ease-in;
+}
+@media (max-width: 766px) {
+  #navegador-index {
+    height: 4rem;
+  }
+}

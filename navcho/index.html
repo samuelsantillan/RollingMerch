@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./SRC/LogoRolling-removebg-preview.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Rolling Merch</title>
+</head>
+
+<body class="d-flex flex-column">
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navegador" id="navegador-index">
+      <div class="container-fluid nav">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand m-0 d-none d-md-block" href="#" alt="Pagina inicio ">
+              <img src="./SRC/RollingLogo.png" class="rounded" alt="Logo de Rolling_Merch" width="100" height="90">
+          </a>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENÚ</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html" alt="Enlace al Inicio"><h5>Rolling Merch</h5></a> <!-- active hace que mantega el hover -->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link ingresar" href="./html/suscripcion.html" alt="Enlace a Ingresar">Ingresar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link registro" href="./html/suscripcion.html" alt="Enlace a registro">Registro</a>
+                    </li>
+                      
+                  </ul>
+
+                  <hr> 
+
+                  <form class="d-flex" role="search" action="./html/error404.html">
+                  <input class="form-control me-2 busqueda" type="search" placeholder="Buscar Producto" aria-label="Search">
+                  <button class="btn btn-success buscar" type="submit">Buscar</button>
+                  </form>
+              </div>
+          </div>
+          <a class="btn ms-0 ms-sm-1 ms-md-1 ms-lg-5 login" href="./html/login.html" role="button"><img class="carrito" src="./SRC/icons8-shopping-trolley-64 (2).png" alt=""></a>
+      </div>
+    </nav>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
