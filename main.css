@@ -92,9 +92,7 @@ main {
 .titulo{
     color: #c10001;
 }
-body{
-    background-color: #31302f;
-}
+
 
 
 /*** MEDIA QUERIES ***/
@@ -152,4 +150,29 @@ body{
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
+}
+
+body{
+    background-color:#31302F !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+}
+
+
+/* Pagina administrador */
+.form-colors{
+    color:  #C10001 !important;
+    border-radius: 1px !important;
+    border-color:  #C10001 !important;
+    font-family: 'Roboto Mono', monospace;
+}
+  
+.admin-inputs{
+    background-color:black !important;
+    border-color:#764C4C!important;
+    color:  #C10001!important;
+}
+.agregar{
+    background-color:#9A9693!important;
+    color:#C10001 !important;
 }
