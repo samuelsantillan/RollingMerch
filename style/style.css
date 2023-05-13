@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+
 *{
     margin: 0;
     padding: 0;
@@ -39,11 +42,13 @@ body{
     box-shadow: 0 0.5rem 1rem var(--primer-color);
 }
 .titulo_pagina{
+    font-family: "Poppins", sans-serif;
     font-size: 2.5rem;
-    color: var(--quinto-color);
+    color: var(--cuarto-color);
     margin-bottom: 1rem;
 }
 .frase_pagina{
+    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     color: var(--quinto-color);
     margin-bottom: 1rem;
@@ -112,4 +117,30 @@ body{
 
 .iconos_redes a img:hover{
     transform: scale(1.1);
+}
+
+footer{
+    font-family: "Poppins", sans-serif;
+    background-color: black!important;
+    margin-top: 2rem !important;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    width: 130px;
+}
+
+.footer-principal{
+    background-color: black!important;
+    color: white;
+}
+
+.footer-principal p {
+    color: white!important;
+}
+
+.footer-secundario{
+    background-color: #9A9693;
+    color: black!important;
 }
