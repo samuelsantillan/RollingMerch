@@ -25,7 +25,7 @@ loginForm.addEventListener('submit', (e)=>{
             showConfirmButton: false
             })
         setTimeout(function(){
-            window.location.href = 'paginaAdmin.html';
+            window.location.href = '../html/paginaAdmin.html';
         }, 1500);           
     }else{        
         localStorage.setItem('login_exitoso', JSON.stringify(usuarioValido))    
@@ -36,7 +36,7 @@ loginForm.addEventListener('submit', (e)=>{
             showConfirmButton: false
             })
         setTimeout(function(){
-            window.location.href = 'home.html' ;
+            window.location.href = '../html/home.html' ;
         }, 1500);             
     }
 })

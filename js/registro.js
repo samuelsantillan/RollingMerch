@@ -29,7 +29,7 @@ registerForm.addEventListener('submit', (e)=>{
             confirmButtonColor: '#C10001'           
           })
         setTimeout(function(){
-            window.location.href = 'index.html';
+            window.location.href = '../index.html';
         }, 1500);
     }
 })
