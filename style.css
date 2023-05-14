@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif !important;
-  margin: 0;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
   background-color: white !important;
   min-height: 100vh !important;
   margin: 0 !important;
 }
 
+/* Estilos navbar */
 #navegador-index {
   background-color: black !important;
 }
@@ -74,6 +72,8 @@ body {
   scale: 1.1;
   transition: 300ms ease-in;
 }
+
+/* Estilos footer */
 footer{
   font-family: "Poppins", sans-serif;
   background-color: black!important;
@@ -102,3 +102,70 @@ footer{
     height: 4rem;
   }
 }
+
+/* Estilos Login y Registro */
+.login-box{
+  background-color: transparent;
+}
+
+.user-box input:focus, select:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  border-color: #C10001;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.boton{          
+  position: relative;
+  color: black; 
+  background-color: #DDD6DB;
+} 
+
+.boton:hover{
+  background-color: #C10001;
+  color: white
+}
+
+.register-box input:focus, select:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  border-color: #C10001;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.regbtn{
+  background-color: #C10001;
+}
+
+#registerForm{
+  text-align: start;
+}
+.cascading-right {
+  margin-right: -50px;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+ .boton{
+     background-color: #C10001;
+     color: white
+ }   
+}
+
+@media screen and (max-width:599px){
+  .boton{
+      background-color: #C10001;
+      color: white
+  }     
+}
+
+@media (max-width: 991.98px) {
+  .cascading-right {
+    margin-right: 0;
+  }
+}
+
+/*  */
