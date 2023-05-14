@@ -74,6 +74,29 @@ body {
   scale: 1.1;
   transition: 300ms ease-in;
 }
+footer{
+  font-family: "Poppins", sans-serif;
+  background-color: black!important;
+  margin-top: auto !important;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-principal{
+  background-color: black!important;
+  color: white;
+}
+
+.footer-principal p {
+  color: white!important;
+}
+
+.footer-secundario{
+  background-color: #9A9693;
+  color: black!important;
+}
+
 @media (max-width: 766px) {
   #navegador-index {
     height: 4rem;
