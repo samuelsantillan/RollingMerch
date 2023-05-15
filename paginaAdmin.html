@@ -12,12 +12,10 @@
     <title>Rolling Merch</title>
   </head>
   <body >
-    <section
-      class="container col col-11 col-md- col-lg-12  border border-light rounded  mt-5 mb-5"
-    >
+    <section class="container col col-11 col-md- col-lg-12  border border-light rounded  mt-5 mb-5">
       <div class="row">
         <div class="col-md-6 col-lg-6  align-content-center col-sm-10 mb-md-0 mb-5 container-fluid ">
-          <table class="table table-hover  align-content-center form-colors  "id="lista-productos">
+          <table class="table table-hover  align-content-center form-colors" id="lista-productos">
             <thead>
               <tr>
                 <th>Nombre</th>
@@ -55,34 +53,40 @@
                 <button type="submit" id='addProductoButton' class="btn agregar" >Agregar</button>
               </div>
             </form>
-            <div class="col-md-6 col-lg-6  a col-sm-10 mb-md-0 mb-5 container-fluid ">
-              <table class="table table-hover  form-colors  "id="lista-usuarios">
-                <thead>
-                  <tr>
-                    <th>Usuario</th>
-                    <th>Acciones</th>   
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-        </div>
+
+           <!--<div class="col-md-6 col-lg-6  a col-sm-10 mb-md-0 mb-5 container-fluid ">
+                <table class="table table-hover  form-colors  "id="lista-usuarios">
+                  <thead>
+                    <tr>
+                      <th>Usuario</th>
+                      <th>Acciones</th>   
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+           </div> -->
       </ul>
       </div>
-      </div>
+      </div>      
     </section>
-        
-         
-
-
-
-      
-    
-
-
-
-
-
+    <section class="container col col-11 col-md- col-lg-12  border border-light rounded  mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-6  align-content-center col-sm-10 mb-md-0 mb-5 container-fluid form-colors ">
+          <h2 class="text-center-sm text-center">Administrar Usuarios: </h2>
+          <table class="table table-hover  align-content-center form-colors  "id="lista-usuarios">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>   
+                <th>Email</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>       
+    </section>
     <script src="./javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>

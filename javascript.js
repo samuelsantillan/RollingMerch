@@ -1,4 +1,4 @@
-//Pagina admin
+//INICIO PAGINA ADMIN
 
 let productos = [];
 
@@ -11,6 +11,7 @@ const precioProducto = document.getElementById("precioProducto");
 const descripcionProducto = document.getElementById("descripcionProducto");
 const imagenProducto = document.getElementById("urlProducto");
 const addProductoButton = document.getElementById("addProductoButton");
+const listaUsuarios = document.getElementById("lista-usuarios");
 
 //Funcion para agregar productos
 
@@ -127,4 +128,48 @@ if (productosLocalStorage) {
   mostrarProductos();
 }
 
+// Funcion para mostrar los usuarios en el DOM
+const Users = JSON.parse(localStorage.getItem('users')) || []
+
+const mostrarUsuarios = () => {
+  listaUsuarios.querySelector("tbody").innerHTML = ""; // para que pueda resetear la tabla  
+
+  Users.forEach((usuario) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+    <td>${usuario.name}</td>
+    <td>${usuario.lastname}</td>
+    <td>${usuario.email}</td>
+    <td>    
+    <button class="btn btn-danger delete" data-email="${usuario.email}">Eliminar</button>
+    </td>
+    `;
+    listaUsuarios.querySelector("tbody").appendChild(tr);
+  });
+}
+
+mostrarUsuarios();
+
+// Funcion para eliminar usuarios
+
+listaUsuarios.addEventListener("click", (e) => {
+  
+  if (e.target.classList.contains("delete")) {
+    const emailCapturado = e.target.dataset.email;
+    const index = Users.findIndex(
+      (usuario) => usuario.email === emailCapturado
+      
+    );
+    console.log(emailCapturado)
+    if (index !== -1) {
+      Users.splice(index, 1);
+      mostrarUsuarios();
+      alert("Usuario eliminado");
+      let userJSON = JSON.stringify(Users);
+      localStorage.setItem("users", userJSON); 
+    }
+  }
+});
+
 //FIN PAGINA ADMIN
+
