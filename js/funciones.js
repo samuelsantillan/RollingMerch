@@ -48,6 +48,7 @@ addProductoButton.addEventListener("click", (e) => {
     agregarProductosForm.reset();
     agregarProductosForm.dataset.mode = "add";
     addProductoButton.textContent = "Agregar";
+    location.reload();
 
     //llamar a una funcion que actualiza la lista de productos
     mostrarProductos();
@@ -72,7 +73,7 @@ listaProductos.addEventListener("click", (e) => {
       agregarProductosForm.dataset.editId = idCapturado; // usar editId en vez de id
       // cambiar el texto del boton
       addProductoButton.textContent = "Editar";
-    }
+    }    
   }
 });
 
@@ -89,6 +90,7 @@ listaProductos.addEventListener("click", (e) => {
       mostrarProductos();
       alert("Producto eliminado");
     }
+    location.reload();
   }
 });
 
