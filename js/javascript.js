@@ -103,8 +103,8 @@ const mostrarProductos = () => {
     <td>${producto.precio}</td>
     <td>${producto.descripcion}</td>
     <td>
-    <button class="btn btn-primary edit" data-id="${producto.id}">Editar</button>
-    <button class="btn btn-danger delete" data-id="${producto.id}">Eliminar</button>
+    <button class="btn btn-primary edit" data-id="${producto.id}"><i class="fa-solid fa-pen-to-square fa-bounce"></i></button>
+    <button class="btn btn-danger delete" data-id="${producto.id}"><i class="fa-solid fa-trash fa-bounce"></i></button>
     </td>
     `;
     listaProductos.querySelector("tbody").appendChild(tr);
@@ -137,11 +137,10 @@ const mostrarUsuarios = () => {
   Users.forEach((usuario) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-    <td>${usuario.name}</td>
-    <td>${usuario.lastname}</td>
+    <td>${usuario.name} ${usuario.lastname}</td>    
     <td>${usuario.email}</td>
     <td>    
-    <button class="btn btn-danger delete" data-email="${usuario.email}">Eliminar</button>
+    <button class="btn btn-danger delete" data-email="${usuario.email}"><i class="fa-solid fa-trash fa-bounce"></i></button>
     </td>
     `;
     listaUsuarios.querySelector("tbody").appendChild(tr);
