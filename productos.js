@@ -1,5 +1,8 @@
 let catalogo = [];
 
+//obtengo los productos del archivo 
+
+
 fetch("productos.json")
     .then(response => response.json()) 
     .then(data => {
@@ -19,12 +22,12 @@ function cargarCatalogo(){
             const div = document.createElement("div");
         div.classList.add("item");
         div.innerHTML = `
-            <img class="producto-imagen" src="${item.imagen}" alt="${item.titulo}">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">${item.titulo}</h3>
-                <p class="producto-precio">$${item.precio}</p>
-                <button class="producto-agregar" id="${item.id}">Agregar</button>
-            </div>
+        <img class="producto-imagen" src="${item.imagen}" alt="${item.nombre}">
+        <div class="producto-detalles">
+            <h3 class="producto-titulo">${item.nombre}</h3>
+            <p class="producto-precio">$${item.precio}</p>
+            <button class="producto-agregar" id="${item.id}">Agregar</button>
+        </div>
         `;
 
         contenedorCatalogo.append(div);
@@ -163,4 +166,40 @@ if (productosLocalStorage) {
   mostrarProductos();
 }
 
-//FIN PAGINA ADMIN
+console.log(productos)
+//genro cards
+
+
+
+const contenedorCatalogo2=document.getElementById('catalogo2')
+
+function cargarCatalogoAdm(){
+
+  productos.forEach(item=> {
+          const div = document.createElement("div");
+      div.classList.add("item");
+      div.innerHTML = `
+      <img class="producto-imagen" src="${item.imagen}" alt="${item.nombre}">
+      <div class="producto-detalles">
+          <h3 class="producto-titulo">${item.nombre}</h3>
+          <p class="producto-precio">$${item.precio}</p>
+          <button class="producto-agregar" id="${item.id}">Agregar</button>
+      </div>
+      `;
+
+      contenedorCatalogo2.append(div);
+      }
+  )
+
+}
+
+cargarCatalogoAdm(productos)
+
+
+
+//FIN PAGINA ADMIN*/
+
+
+// Almacenar el array de productos en el almacenamiento local
+
+

@@ -12,20 +12,48 @@
     <!-- link css-->
     <link rel="stylesheet" href="main.css">
 
+    
+
 </head>
 <body>
     <div class="wrapper">
         <main>
         <h1 class="titulo">Tienda Online</h1>
-        <div id="catalogo"  class="contenedor-productos">
-            <!-- Aquí se generarán dinámicamente las cards de productos -->
-        </div>
+        <!-- Aquí se generarán dinámicamente las cards de productos -->
+        <div id="catalogo"  class="contenedor-productos"></div>
+        <div id="catalogo2"  class="contenedor-productos"></div>
+        
+        
         </main>
     </div>
+    
 
       <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-      <script src="productos.js"></script>
+      <script type="module" src="productos.js"></script>
+      <script>const contenedorCatalogo2=document.getElementById('catalogo2')
+      const productosLocalStorage = JSON.parse(localStorage.getItem("productos"));
+
+       
+        
+          productos.forEach(item=> {
+                  const div = document.createElement("div");
+              div.classList.add("item");
+              div.innerHTML = `
+              <img class="producto-imagen" src="${item.imagen}" alt="${item.nombre}">
+              <div class="producto-detalles">
+                  <h3 class="producto-titulo">${item.nombre}</h3>
+                  <p class="producto-precio">$${item.precio}</p>
+                  <button class="producto-agregar" id="${item.id}">Agregar</button>
+              </div>
+              `;
+        
+              contenedorCatalogo2.append(div);
+              }
+          )
+        
+        </script>
+      
 </body>
 </html>
