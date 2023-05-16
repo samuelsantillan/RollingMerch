@@ -1,6 +1,4 @@
 /* Styles Index y Admin */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
     --clr-main: #4b33a8;
     --clr-main-light: #785ce9;
@@ -13,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5, h6, p, a, input, textarea {
@@ -38,6 +36,11 @@ main {
     margin-left: 0;
     border-radius: 2rem;
     padding: 3rem;
+    margin-top: 5%;
+    margin-bottom: 20%;    
+}
+.borde{
+    margin-top: 13%;
 }
 
 .titulo-principal {
@@ -99,11 +102,23 @@ main {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    main{
+        margin-top: 7%;
+    }
+    .borde{
+        margin-top: 25%;
+    }
 }
 
 @media screen and (max-width: 675px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
+    }
+    main{
+        margin-top: 9%;
+    }
+    .borde{
+        margin-top: 25%;
     }
 }
 
@@ -111,8 +126,11 @@ main {
 
     main {
         margin: 1rem;
-        margin-top: 0;
+        margin-top: 9;
         padding: 2rem;
+    }
+    .borde{
+        margin-top: 25%;
     }
 
     .contenedor-productos {
@@ -140,6 +158,10 @@ main {
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
+}
+
+@media all and (min-width:768px) and (max-width:1023px){  
+  
 }
 
 /* Styles Pagina administrador */
