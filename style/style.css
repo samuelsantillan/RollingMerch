@@ -26,6 +26,82 @@ body{
     z-index: -1;
 }
 
+/*Inicio Buscador*/
+#search-results{
+    
+}
+
+/*Fin Buscador*/
+
+/*Inicio Nav*/
+#navegador-index {
+    background-color: black !important;
+}
+.ingresar:hover {
+    scale: 1.2 !important;
+    transition: 300ms ease-in;
+    color: #c10001 !important;
+}
+.registro:hover {
+    scale: 1.2 !important;
+    transition: 300ms ease-in;
+    color: #c10001 !important;
+}
+.nav {
+    background-color: black !important;
+}
+
+.carrito {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+    font-weight: bold !important;
+}
+
+.navegador {
+    background-color: white !important;
+}
+
+.busqueda {
+    background-color: white !important;
+    border-color: #c10001 !important;
+    color: #c10001 !important;
+}
+
+.busqueda::placeholder {
+    color: black !important;
+    opacity: 0.6 !important;
+}
+
+.buscar {
+    background-color: #c10001 !important;
+    border-color: white !important;
+}
+
+.login {
+    border-color: white !important;
+    background-color: #c10001 !important;
+}
+.login:hover {
+    scale: 1.1;
+    transition: 300ms ease-in;
+}
+@media (max-width: 766px) {
+    #navegador-index {
+    height: 4rem;
+}   
+}
+
+/*Fin Nav*/
+
+/*Acerca De Nosotros*/
 .contenedor_pre{
     display: flex;
     flex-direction: column;
@@ -33,11 +109,10 @@ body{
     align-items: center;
     text-align: center;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 10rem;
     max-width: 90rem;
     border-radius: 1rem;
     background-color: var(--primer-color);
-    /*background: radial-gradient(circle, var(--primer-color) 0%, rgba(154,150,147,1) 100%);*/
     border: solid 0.1rem var(--quinto-color);
     box-shadow: 0 0.5rem 1rem var(--primer-color);
 }
@@ -118,7 +193,9 @@ body{
 .iconos_redes a img:hover{
     transform: scale(1.1);
 }
+/*Fin Acerca De Nosotros*/
 
+/*footer*/
 footer{
     font-family: "Poppins", sans-serif;
     background-color: black!important;
@@ -144,3 +221,4 @@ img {
     background-color: #9A9693;
     color: black!important;
 }
+/*Fin Footer*/
