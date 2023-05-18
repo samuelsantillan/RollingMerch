@@ -24,8 +24,9 @@ addProductoButton.addEventListener("click", (e) => {
   const imagen = imagenProducto.value;
   const mode = agregarProductosForm.dataset.mode; // dataset es un objeto que contiene todos los atributos de un elemento
   const editId = agregarProductosForm.dataset.editId;
+
   if (nombre == "" && precio == "" && descripcion == "" && imagen == "") {
-    alert("Ningun campo puede estar vacio");
+    alert("Debes agregar un producto!");
   } else {
     if (mode === "add") {
       const id = uuidv4();
@@ -116,12 +117,7 @@ const mostrarProductos = () => {
   localStorage.setItem("productos", JSON.stringify(productos));
 };
 
-// Funcion para generar un id unico
-
-function uuidv4() {
-  return crypto.randomUUID();
-}
-// obtener los productos del local storage
+// obtener los productos del local storage y ejecutar mostrar productos
 
 const productosLocalStorage = JSON.parse(localStorage.getItem("productos"));
 
@@ -129,6 +125,13 @@ if (productosLocalStorage) {
   productos = productosLocalStorage;
   mostrarProductos();
 }
+
+// Funcion para generar un id unico
+
+function uuidv4() {
+  return crypto.randomUUID();
+}
+
 
 // Funcion para mostrar los usuarios en el DOM
 const Users = JSON.parse(localStorage.getItem('users')) || []

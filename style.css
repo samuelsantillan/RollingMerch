@@ -10,6 +10,7 @@ body {
   margin: 0;  
   min-height: 100vh !important;
   margin: 0 !important;
+  position: relative;
 }
 
 /* Estilos navbar */
@@ -77,9 +78,9 @@ footer{
   font-family: "Poppins", sans-serif;
   background-color: black!important;
   margin-top: auto !important;
-  position: absolute;
+  position: static;
   width: 100%;
-  bottom: -1000px;
+  bottom: 500px;
 }
 
 .footer-principal{
