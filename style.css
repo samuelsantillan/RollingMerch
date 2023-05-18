@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;  
+  min-height: 100vh !important;
+  margin: 0 !important;
+  position: relative;
+}
+
+/* Estilos navbar */
+#navegador-index {
+  background-color: black !important;
+}
+.ingresar:hover {
+  scale: 1.2 !important;
+  transition: 300ms ease-in;
+  color: #c10001 !important;
+}
+.registro:hover {
+  scale: 1.2 !important;
+  transition: 300ms ease-in;
+  color: #c10001 !important;
+}
+.nav {
+  background-color: black !important;
+}
+
+.carrito {
+  height: 1.9rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  font-weight: bold !important;
+}
+
+.navegador {
+  background-color: white !important;
+}
+
+.busqueda {
+  background-color: white !important;
+  border-color: #c10001 !important;
+  color: #c10001 !important;
+}
+
+.busqueda::placeholder {
+  color: black !important;
+  opacity: 0.6 !important;
+}
+
+.buscar {
+  background-color: #c10001 !important;
+  border-color: white !important;
+}
+
+.login {
+  border-color: white !important;
+  background-color: #c10001 !important;
+}
+.login:hover {
+  scale: 1.1;
+  transition: 300ms ease-in;
+}
+
+/* Estilos footer */
+footer{
+  font-family: "Poppins", sans-serif;
+  background-color: black!important;
+  margin-top: auto !important;
+  position: static;
+  width: 100%;
+  bottom: 500px;
+}
+
+.footer-principal{
+  background-color: black!important;
+  color: white;
+}
+
+.footer-principal p {
+  color: white!important;
+}
+
+.footer-secundario{
+  background-color: #9A9693;
+  color: black!important;
+}
+
+@media (max-width: 766px) {
+  #navegador-index {
+    height: 4rem;
+  }
+  footer{
+    bottom: -5000px;
+  }
+}
+
+/* Estilos Login y Registro */
+.login-box{
+  background-color: transparent;
+}
+
+.user-box input:focus, select:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  border-color: #C10001;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.boton{          
+  position: relative;
+  color: black; 
+  background-color: #DDD6DB;
+} 
+
+.boton:hover{
+  background-color: #C10001;
+  color: white
+}
+
+.register-box input:focus, select:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  border-color: #C10001;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.regbtn{
+  background-color: #C10001;
+}
+
+#registerForm{
+  text-align: start;
+}
+.cascading-right {
+  margin-right: -50px;
+}
+
+@media all and (min-width:600px) and (max-width:1023px){
+ .boton{
+     background-color: #C10001;
+     color: white
+ }   
+}
+
+@media screen and (max-width:599px){
+  .boton{
+      background-color: #C10001;
+      color: white
+  }     
+}
+
+@media (max-width: 991.98px) {
+  .cascading-right {
+    margin-right: 0;
+  }
+}
+
+/*  */

@@ -1,0 +1,190 @@
+/* Styles Index y Admin */
+:root {
+    --clr-main: #4b33a8;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main{
+    background-color: #31302f;
+}
+
+main {
+    background-color: #31302f;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-top: 5%;
+    margin-bottom: 20%;    
+}
+.borde{
+    margin-top: 13%;
+}
+
+.titulo-principal {
+    color: var(--clr-main);
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles {
+    background-color: #c10001;
+    color: var(--clr-white);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo {
+    font-size: 1rem;
+    
+}
+
+.producto-agregar {
+    border: 0;
+    background-color: #9a9693;
+    color: var(--clr-main);
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-white);
+    transition: background-color .2s, color .2s;
+}
+
+.producto-agregar:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+}
+.titulo{
+    color: #c10001;
+}
+
+
+/* Media Querys Index y Admin*/
+
+@media screen and (max-width: 850px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main{
+        margin-top: 7%;
+    }
+    .borde{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+    main{
+        margin-top: 9%;
+    }
+    .borde{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {    
+
+    main {
+        margin: 1rem;
+        margin-top: 9;
+        padding: 2rem;
+    }
+    .borde{
+        margin-top: 25%;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+
+    .carrito-producto {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }   
+
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1023px){  
+  
+}
+
+/* Styles Pagina administrador */
+
+body{
+    background-color:#31302F !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+}
+.form-colors{
+    color:  #C10001 !important;
+    border-radius: 1px !important;
+    border-color:  #C10001 !important;
+    font-family: 'Roboto Mono', monospace;
+}
+  
+.admin-inputs{
+    background-color:black !important;
+    border-color:#764C4C!important;
+    color:  #C10001!important;
+}
+.agregar{
+    background-color:#9A9693!important;
+    color:#C10001 !important;
+}
