@@ -41,9 +41,9 @@
 
            <hr />
 
-           <form class="d-flex" role="search" action="./html/error404.html">
-             <input class="form-control me-2 busqueda" type="search" placeholder="Buscar Producto" aria-label="Search"/>
-             <button class="btn btn-success buscar" type="submit" title="Buscar">
+           <form class="d-flex" role="search">
+             <input class="form-control me-2 busqueda" type="search" placeholder="Buscar Producto" aria-label="Search" id="productoFiltrado"/>
+             <button class="btn btn-success buscar" title="Buscar" onclick="buscarProducto(productoFiltrado)">
                Buscar
              </button>
            </form>
@@ -167,8 +167,8 @@
 <!-- Fin Footer -->
     <!-- Scripts -->
     <script src="./js/login.js"></script>
-    <script src="../js/cargarProdLS.js"></script>
-    <script src="../js/productos.js"></script>
+    <script src="./js/cargarProdLS.js"></script>
+    <script src="./js/productos.js"></script>    
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
     <!-- Bootstrap -->

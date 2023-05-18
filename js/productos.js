@@ -24,9 +24,9 @@ fetch("../productos.json")
               <div class="producto-detalles">
                   <h3 class="producto-titulo">${item.titulo}</h3>
                   <p class="producto-precio">$${item.precio}</p>
-                  <button class="producto-agregar" id="${item.id}">Agregar</button>
-              </div>
-          `;
+                  <button class="producto-agregar" id="${item.id}">Agregar</button>                  
+              </div>              
+              `;
   
           contenedorCatalogo.append(div);
           }
@@ -34,3 +34,22 @@ fetch("../productos.json")
   
   };
   
+//Buscar un producto
+
+const prodFiltrado = document.getElementById("productoFiltrado");
+
+const buscarProducto = (producto) => {
+    
+  let productoFiltrado = catalogo.filter((item) => item == producto.value);    
+  console.log(productoFiltrado) 
+  console.log(producto.value);
+  console.log(catalogo.includes(productoFiltrado[0]));    
+    if(!productoFiltrado[0]){
+      prodFiltrado.value = "";
+      return alert('Producto no encontrado.') ;           
+    }else{
+      prodFiltrado.value = "";
+      return  alert('Producto encontrado: ' + productoFiltrado[0]);      
+  }     
+};  
+   

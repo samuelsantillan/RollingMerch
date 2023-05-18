@@ -26,13 +26,21 @@ addProductoButton.addEventListener("click", (e) => {
   const editId = agregarProductosForm.dataset.editId;
 
   if (nombre == "" && precio == "" && descripcion == "" && imagen == "") {
-    alert("Debes agregar un producto!");
+    Swal.fire({
+      icon: 'error',
+      title: 'Debes agregar un producto!',
+      confirmButtonColor: '#C10001'           
+    })  
   } else {
     if (mode === "add") {
       const id = uuidv4();
       const producto = { id, nombre, precio, descripcion, imagen };
       productos.push(producto);
-      alert("Producto agregado");
+      Swal.fire({
+        icon: 'success',
+        title: 'Producto agregado',
+        confirmButtonColor: '#C10001'           
+      })      
     } else if (mode === "edit") {
       const index = productos.findIndex((producto) => producto.id === editId);
       if (index !== -1) {
@@ -41,15 +49,18 @@ addProductoButton.addEventListener("click", (e) => {
         producto.precio = precio;
         producto.descripcion = descripcion;
         producto.imagen = imagen;
-        alert("Producto editado");
+        Swal.fire({
+          icon: 'success',
+          title: 'Producto editado',
+          confirmButtonColor: '#C10001'           
+        })        
       }
     }
 
     //Limpiar el formulario
     agregarProductosForm.reset();
     agregarProductosForm.dataset.mode = "add";
-    addProductoButton.textContent = "Agregar";
-    location.reload();
+    addProductoButton.textContent = "Agregar";    
 
     //llamar a una funcion que actualiza la lista de productos
     mostrarProductos();
@@ -89,9 +100,12 @@ listaProductos.addEventListener("click", (e) => {
     if (index !== -1) {
       productos.splice(index, 1);
       mostrarProductos();
-      alert("Producto eliminado");
-    }
-    location.reload();
+      Swal.fire({
+        icon: 'success',
+        title: 'Producto eliminado',
+        confirmButtonColor: '#C10001'           
+      })      
+    }    
   }
 });
 
@@ -168,7 +182,11 @@ listaUsuarios.addEventListener("click", (e) => {
     if (index !== -1) {
       Users.splice(index, 1);
       mostrarUsuarios();
-      alert("Usuario eliminado");
+      Swal.fire({
+        icon: 'success',
+        title: 'Usuario eliminado',
+        confirmButtonColor: '#C10001'           
+      })      
       let userJSON = JSON.stringify(Users);
       localStorage.setItem("users", userJSON); 
     }
@@ -177,3 +195,6 @@ listaUsuarios.addEventListener("click", (e) => {
 
 //FIN PAGINA ADMIN
 
+
+
+  
