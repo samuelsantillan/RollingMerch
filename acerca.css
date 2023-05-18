@@ -18,6 +18,9 @@
 body{
     background-color: var(--primer-color) !important;
 }
+main{
+    margin-top: 11%;  
+}
 
 #particles-js{
     height: 100vh;
@@ -119,28 +122,22 @@ body{
     transform: scale(1.1);
 }
 
-footer{
-    font-family: "Poppins", sans-serif;
-    background-color: black!important;
-    margin-top: 2rem !important;
-    width: 100%;
-    bottom: 0;
-}
-
-img {
-    width: 130px;
-}
-
-.footer-principal{
-    background-color: black!important;
-    color: white;
-}
-
-.footer-principal p {
-    color: white!important;
-}
-
-.footer-secundario{
-    background-color: #9A9693;
-    color: black!important;
-}
+@media all and (min-width:600px) and (max-width:1023px){
+    main{
+        margin-top: 25%;  
+    }
+   }
+   
+   @media screen and (max-width:599px){
+    main{
+        margin-top: 20%;  
+    }   
+   }
+   
+   @media (max-width: 991.98px) {
+    main{
+        margin-top: 20%;  
+    }
+   }
+   
+   
