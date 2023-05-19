@@ -36,20 +36,42 @@ fetch("../productos.json")
   
 //Buscar un producto
 
-const prodFiltrado = document.getElementById("productoFiltrado");
+const prod = document.getElementById("productoBuscado");
 
 const buscarProducto = (producto) => {
-    
-  let productoFiltrado = catalogo.filter((item) => item == producto.value);    
+  console.log(catalogo);
+  let productoFiltrado = catalogo.filter((item) => item.titulo == producto.value);    
   console.log(productoFiltrado) 
   console.log(producto.value);
   console.log(catalogo.includes(productoFiltrado[0]));    
     if(!productoFiltrado[0]){
-      prodFiltrado.value = "";
+      prod.value = "";
       return alert('Producto no encontrado.') ;           
     }else{
-      prodFiltrado.value = "";
-      return  alert('Producto encontrado: ' + productoFiltrado[0]);      
+      prod.value = "";
+      return  alert('Producto encontrado: ' + productoFiltrado[0].titulo);      
   }     
 };  
    
+
+/* const buscar = async (producto) => {
+  try {
+      const res = await fetch('/productos.json')
+      const catalogo = await res.json()
+
+      var prod = document.getElementById("productoBuscado").value
+      let productoFiltrado = catalogo.filter((item) => item.titulo == producto.value);
+      if(!productoFiltrado[0]){
+        prod.value = "";
+        return alert('Producto no encontrado.') ;           
+      }else{
+        prod.value = "";
+        console.log(productoFiltrado)
+        cargarCatalogo(productoFiltrado)    
+    }     
+      
+  }
+  catch (e){
+      console.log(e)
+  }
+} */
