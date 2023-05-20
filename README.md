@@ -2,7 +2,7 @@
 # Comision 44i - FullStack
 ## **Proyecto: Rolling Merch**
 
-- Rolling Merch es una tienda virtual donde se puedes ver y compras tus productos de Rolling favoritos. 
+- Rolling Merch es una tienda virtual donde puedes ver y compras tus productos de Rolling favoritos. 
 Además, al registrarte como usuario, cuentas con beneficios, promociones y podes enterarte de todo lo 
 que se puede hacer.
 
