@@ -39,6 +39,10 @@ main {
     margin-top: 5%;
     margin-bottom: 20%;    
 }
+.section{
+    background-color: #4e4646;
+}
+
 .borde{
     margin-top: 13%;
 }
@@ -52,6 +56,12 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+}
+
+.contenedor-buscados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;    
 }
 
 .producto-imagen {

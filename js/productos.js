@@ -1,4 +1,9 @@
+//Obtenemos el json del local storage
+let productosLS = JSON.parse(localStorage.getItem("productos"));
+
+//Declaro el array de catalogo donde se guardaran los productos del archivo productos.json
 let catalogo = [];
+
 
 //obtengo los productos del archivo 
 
@@ -6,8 +11,7 @@ fetch("../productos.json")
     .then(response => response.json()) 
     .then(data => {
       catalogo = data;
-      cargarCatalogo(catalogo);
-      console.log(catalogo)
+      cargarCatalogo(catalogo);      
     })
     .catch(error => {
       console.error("Error al cargar catalogo:", error);
@@ -30,48 +34,59 @@ fetch("../productos.json")
   
           contenedorCatalogo.append(div);
           }
-      )
-  
+      )  
   };
-  
-//Buscar un producto
+
+   
+//Buscar un producto con onclick
 
 const prod = document.getElementById("productoBuscado");
+const contenedorBuscados = document.getElementById("buscados");
+const section = document.getElementById("section");
 
 const buscarProducto = (producto) => {
   console.log(catalogo);
-  let productoFiltrado = catalogo.filter((item) => item.titulo == producto.value);    
-  console.log(productoFiltrado) 
-  console.log(producto.value);
-  console.log(catalogo.includes(productoFiltrado[0]));    
-    if(!productoFiltrado[0]){
+  //Concateno el array de catalogo y productos
+  let allProductos = catalogo.concat(productosLS);    
+  let productoFiltrado = allProductos.filter((item) => item.nombre.includes(producto.value));  
+    
+    if(!productoFiltrado[0]  || prod.value == ""){
       prod.value = "";
-      return alert('Producto no encontrado.') ;           
+      const h2 = document.createElement("h2");
+      h2.classList.add("form-colors");
+      h2.innerHTML = `<h2>No se encontraron resultados</h2>`;
+      section.append(h2);
+      setTimeout(function(){
+        section.innerHTML= "";
+        contenedorBuscados.innerHTML= "";
+        }, 5000);         
     }else{
-      prod.value = "";
-      return  alert('Producto encontrado: ' + productoFiltrado[0].titulo);      
-  }     
+       prod.value = "";   
+       const h2 = document.createElement("h2");
+       h2.classList.add("form-colors");
+       h2.innerHTML = `<h2>Resultado de tu busqueda:</h2>`;
+       
+       productoFiltrado.map(item=> {
+        const div = document.createElement("div");
+        div.classList.add("item");
+        div.innerHTML = `
+            <img class="producto-imagen" src="${item.imagen}" alt="${item.nombre}">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">${item.nombre}</h3>
+                <p class="producto-precio">$${item.precio}</p>
+                <button class="producto-agregar" id="${item.id}">Agregar</button>                  
+            </div>              
+            `;
+        section.append(h2);
+        contenedorBuscados.append(div);
+        setTimeout(function(){
+          section.innerHTML= "";
+          contenedorBuscados.innerHTML= "";
+        }, 5000); 
+        }
+      )        
+  }       
 };  
-   
 
-/* const buscar = async (producto) => {
-  try {
-      const res = await fetch('/productos.json')
-      const catalogo = await res.json()
 
-      var prod = document.getElementById("productoBuscado").value
-      let productoFiltrado = catalogo.filter((item) => item.titulo == producto.value);
-      if(!productoFiltrado[0]){
-        prod.value = "";
-        return alert('Producto no encontrado.') ;           
-      }else{
-        prod.value = "";
-        console.log(productoFiltrado)
-        cargarCatalogo(productoFiltrado)    
-    }     
-      
-  }
-  catch (e){
-      console.log(e)
-  }
-} */
+

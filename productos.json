@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "titulo": "Botella deportiva de aluminio ",        
+        "nombre": "Botella deportiva de aluminio ",        
         "precio": "2950",
         "cantidad": 9,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-22-at-18.45.49-500x500.jpeg"
@@ -10,7 +10,7 @@
     {
        
         "id": 2,
-        "titulo": "Gorra Roja RollingCode",        
+        "nombre": "Gorra Roja RollingCode",        
         "precio": "1800",
         "cantidad": 19,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-3-500x500.jpeg"
@@ -18,42 +18,42 @@
     {
         
         "id": 3,
-        "titulo": "Gorra negra RollingCode",        
+        "nombre": "Gorra negra RollingCode",        
         "precio": "1300",
         "cantidad": 19,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-500x500.jpeg"
     },
     {
         "id": 4,
-        "titulo": "Libreta",        
+        "nombre": "Libreta",        
         "precio": "2000",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.15.46-AM-500x500.jpeg"
     },
     {
         "id": 5,
-        "titulo": "Llaveros RollingCode",        
+        "nombre": "Llaveros RollingCode",        
         "precio": "300",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.25.08-AM-500x500.jpeg"
     },
     {
         "id": 6,
-        "titulo": "Pines RollinCode BLANCO / NEGRO",        
+        "nombre": "Pines RollinCode BLANCO / NEGRO",        
         "precio": "650",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2023/04/20230424_135552-500x500.jpg"
     },
     {
         "id": 7,
-        "titulo": "Taza Coding",        
+        "nombre": "Taza Coding",        
         "precio": "2300",
         "cantidad": 14,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.43-AM-2-500x500.jpeg"
     },
     {
         "id": 7,
-        "titulo": "Taza No connection",        
+        "nombre": "Taza No connection",        
         "precio": "2300",
         "cantidad": 3,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.44-AM-1-500x500.jpeg"

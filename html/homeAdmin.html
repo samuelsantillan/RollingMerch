@@ -44,12 +44,12 @@
                   </li>                         
               </ul>   
               <hr />   
-              <form class="d-flex" role="search" action="./html/error404.html">
-                <input class="form-control me-2 busqueda" type="search" placeholder="Buscar Producto" aria-label="Search"/>
-                <button class="btn btn-success buscar" type="submit" title="Buscar">
-                  Buscar
-                </button>
-              </form>
+              <div class="d-flex" role="search">
+                <input class="form-control me-2 busqueda" type="search" placeholder="Buscar Producto" aria-label="Search" id="productoBuscado" /> <!-- oninput="buscarProducto()" -->
+                <button class="btn btn-success buscar" title="Buscar" onclick="buscarProducto(productoBuscado)">
+                Buscar
+              </button>
+             </div>
             </div>
           </div>
           <a class="btn ms-0 ms-sm-1 ms-md-1 ms-lg-3 login" href="./error404admin.html"  data-bs-target="#staticBackdrop" role="button">
@@ -59,44 +59,50 @@
       <!-- Fin Navbar -->
 
       <!-- Inicio Main -->
-
       <main class="container">
-      <!-- Carrusel -->
-               <div id="carouselExampleCaptions" class="carousel slide mt-5 mt-lg-0 data-bs-ride="carousel" ">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../src/images/Banner1.jpeg" class="d-block w-100" alt="Banner 1 de publicidad">
-                        <div class="carousel-caption d-block d-md-block mb-0 mb-lg-5 p-0">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                            <img src="../src/images/Banner2.jpeg" class="d-block w-100" alt="Banner 2 de publicidad">
-                        <div class="carousel-caption d-block d-md-block mb-0 mb-lg-5 p-0">
-            
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                            <img src="../src/images/Banner3.jpeg" class="d-block w-100" alt="Banner 3 de publicidad">
-                        <div class="carousel-caption d-block d-md-block  mb-0 mb-lg-5 p-0">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../src/images/Banner4.jpeg" class="d-block w-100" alt="Banner 4 de publicidad">
-                  <div class="carousel-caption d-block d-md-block  mb-0 mb-lg-5 p-0">
-                  </div>
-                  </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+          <!-- Inicio busqueda -->
+        <section class="my-2">
+          <div id="section"></div>
+          <div id="buscados" class="contenedor-buscados"></div> 
+        </section>  
+    <!-- Fin busqueda -->
+    <!-- Incio Carrusel -->        
+        <div id="carouselExampleCaptions" class="carousel slide mt-lg-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../src/images/Banner1.jpeg" class="d-block w-100" alt="Banner 1 de publicidad">
+                <div class="carousel-caption d-block d-md-block mb-0 mb-lg-5 p-0">
                 </div>
-              </div> 
+            </div>
+            <div class="carousel-item">
+                    <img src="../src/images/Banner2.jpeg" class="d-block w-100" alt="Banner 2 de publicidad">
+                <div class="carousel-caption d-block d-md-block mb-0 mb-lg-5 p-0">
+    
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <img src="../src/images/Banner3.jpeg" class="d-block w-100" alt="Banner 3 de publicidad">
+                <div class="carousel-caption d-block d-md-block  mb-0 mb-lg-5 p-0">
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../src/images/Banner4.jpeg" class="d-block w-100" alt="Banner 4 de publicidad">
+          <div class="carousel-caption d-block d-md-block  mb-0 mb-lg-5 p-0">
+          </div>
+          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div> 
+      <!-- Fin Carrusel -->
         <h1 class="text-center-sm text-center form-colors my-4">Tienda Online</h1>
         <!-- Aquí se generarán dinámicamente las cards de productos -->
         <div id="catalogo" class="contenedor-productos"></div>
