@@ -27,7 +27,7 @@ que se puede hacer.
 
 ### Deploy
 
-<a href="https://rolling-merch.netlify.app" target="_blank">Rolling Merch</a>
+<a href="https://rollingmerch.netlify.app" target="_blank">Rolling Merch</a>
 
 -------------------------
 
