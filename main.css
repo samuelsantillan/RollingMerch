@@ -57,13 +57,6 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
-
-.contenedor-buscados {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;    
-}
-
 .producto-imagen {
     max-width: 100%;
     border-radius: 1rem;
@@ -105,6 +98,66 @@ main {
 .titulo{
     color: #c10001;
 }
+/* Modal busquedas */
+.contenedor-buscados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;   
+    width: 33%;
+    margin-top: 1%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*for the top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    right: 30%;
+    scrollbar-color: none;
+  }
+
+  .contenedor-buscados::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-around;  
+    width: 100%;
+  }
+  
+  .modal-header-title {
+    justify-self: start;
+    font-size: medium;
+  }
+  
+  .modal-header-button {
+    cursor: pointer;
+  }
+  
+  .contenedor-buscados > div > img {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+  }  
+
+  .producto-buscados {
+    background-color: #c10001;
+    color: var(--clr-white);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 80%;    
+    margin-left: 10%;
+}
+
 
 
 /* Media Querys Index y Admin*/
@@ -119,6 +172,12 @@ main {
     .borde{
         margin-top: 25%;
     }
+    .contenedor-buscados {
+        width: 70%;
+        margin: 0;  
+        left: 12%;         
+      }
+    
 }
 
 @media screen and (max-width: 675px) {
@@ -131,6 +190,11 @@ main {
     .borde{
         margin-top: 25%;
     }
+    .contenedor-buscados {
+        width: 70%;
+        margin: 0;
+        left: 12%;   
+      }
 }
 
 @media screen and (max-width: 600px) {    
@@ -161,7 +225,12 @@ main {
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: .5rem;
-    }   
+    }  
+    .contenedor-buscados {
+        width: 70%;
+        margin: 0;
+        left: 12%;            
+      } 
 
 }
 
@@ -172,12 +241,22 @@ main {
     .carousel{
         margin-top: 10%;
     }
+    .seccion{
+        margin-top: 10%;
+    }   
 }
 
 @media all and (min-width:768px) and (max-width:1023px){  
     .carousel{
         margin-top: 10%;
     }
+    .seccion{
+        margin-top: 10%;
+    }
+    .contenedor-buscados {
+        width: 50%;
+        margin-top: 5%;            
+      }
 }
 
 /* Styles Pagina administrador */
