@@ -8,8 +8,7 @@ que se puede hacer.
 
 ### Tecnologías utilizadas:
 
-- Front-End
-  + React JS
+- Front-End  
   + Bootstrap
 - Back-End
   + JavaScript
