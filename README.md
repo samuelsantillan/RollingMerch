@@ -1,3 +1,4 @@
+# Rolling Code School
 # Comision 44i - FullStack
 ## **Proyecto: Rolling Merch**
 
@@ -25,12 +26,12 @@ que se puede hacer.
 
 ### Deploy
 
-<a href="https://rolling-merch.vercel.app" target="_blank">Rollin Merch</a>
+<a href="https://rolling-merch.netlify.app" target="_blank">Rolling Merch</a>
 
 -------------------------
 
-![Landing Page](/src/src/RollingLogo.png) 
+![Landing Page](/src/src/landing.png) 
 
 -------------------------
 
-![App](/src/assets/app.png)
+![App](/src/app.png)
