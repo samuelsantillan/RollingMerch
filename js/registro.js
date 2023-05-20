@@ -25,12 +25,12 @@ registerForm.addEventListener('submit', (e)=>{
         localStorage.setItem('users', JSON.stringify(Users))        
         Swal.fire({
             icon: 'success',
-            title: 'Registro exitoso',
+            title: 'Registro exitoso, ya puedes ingresar como usuario.',
             confirmButtonColor: '#C10001'           
           })
         setTimeout(function(){
             window.location.href = '../index.html';
-        }, 1500);
+        }, 2000);
     }
 })
 

@@ -26,7 +26,7 @@ loginForm.addEventListener('submit', (e)=>{
             })
         setTimeout(function(){
             window.location.href = '../html/paginaAdmin.html';
-        }, 1500);           
+        }, 1000);           
     }else{        
         localStorage.setItem('login_exitoso', JSON.stringify(usuarioValido))    
         Swal.fire({
@@ -37,7 +37,7 @@ loginForm.addEventListener('submit', (e)=>{
             })
         setTimeout(function(){
             window.location.href = '../html/home.html' ;
-        }, 1500);             
+        }, 1000);             
     }
 })
 

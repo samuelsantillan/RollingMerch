@@ -10,6 +10,8 @@ que se puede hacer.
 
 - Front-End  
   + Bootstrap
+  + HTML
+  + CSS
 - Back-End
   + JavaScript
 
@@ -29,7 +31,9 @@ que se puede hacer.
 
 -------------------------
 
-![Landing Page](/src/src/landing.png) 
+
+![Landing Page](/src/landing.png) 
+
 
 -------------------------
 
