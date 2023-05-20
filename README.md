@@ -8,8 +8,10 @@ que se puede hacer.
 
 ### Tecnologías utilizadas:
 
-- Front-End
+- Front-End  
   + Bootstrap
+  + HTML
+  + CSS
 - Back-End
   + JavaScript
 
@@ -29,7 +31,9 @@ que se puede hacer.
 
 -------------------------
 
+
 ![Landing Page](/src/landing.png) 
+
 
 -------------------------
 
