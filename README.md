@@ -9,7 +9,6 @@ que se puede hacer.
 ### Tecnologías utilizadas:
 
 - Front-End
-  + React JS
   + Bootstrap
 - Back-End
   + JavaScript
