@@ -169,10 +169,15 @@ main {
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
+    .carousel{
+        margin-top: 10%;
+    }
 }
 
 @media all and (min-width:768px) and (max-width:1023px){  
-  
+    .carousel{
+        margin-top: 10%;
+    }
 }
 
 /* Styles Pagina administrador */

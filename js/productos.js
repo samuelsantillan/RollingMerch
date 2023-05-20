@@ -24,9 +24,9 @@ fetch("../productos.json")
               const div = document.createElement("div");
           div.classList.add("item");
           div.innerHTML = `
-              <img class="producto-imagen" src="${item.imagen}" alt="${item.titulo}">
+              <img class="producto-imagen" src="${item.imagen}" alt="${item.nombre}">
               <div class="producto-detalles">
-                  <h3 class="producto-titulo">${item.titulo}</h3>
+                  <h3 class="producto-titulo">${item.nombre}</h3>
                   <p class="producto-precio">$${item.precio}</p>
                   <button class="producto-agregar" id="${item.id}">Agregar</button>                  
               </div>              
