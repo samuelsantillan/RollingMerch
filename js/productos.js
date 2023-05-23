@@ -59,7 +59,7 @@ const buscarProducto = (producto) => {
   contenedorBuscados.append(modalHeader);
 
   const modalbutton = document.createElement("h1");
-  modalbutton.innerHTML = `<i class="fa-regular fa-circle-xmark fa-bounce" style="color: #fafafa;"></i>`;
+  modalbutton.innerHTML = `<i class="fa-regular fa-circle-xmark" style="color: #fafafa;"></i>`;
   modalbutton.className = "modal-header-button";
 
   modalbutton.addEventListener("click", () => {
@@ -99,6 +99,7 @@ const buscarProducto = (producto) => {
 }          
 };  
  
+contenedorBuscados.style.display = 'none'; 
 
 //Buscar un producto con onclick sin modal
 

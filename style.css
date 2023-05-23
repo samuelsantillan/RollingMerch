@@ -154,6 +154,14 @@ footer{
   margin-right: -50px;
 }
 
+.volver{
+  text-decoration: none;
+  color: #31302F;
+}
+.volver:hover{
+  color: #C10001;
+}
+
 @media all and (min-width:600px) and (max-width:1023px){
  .boton{
      background-color: #C10001;
