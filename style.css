@@ -12,7 +12,9 @@ body {
   margin: 0 !important;
   position: relative;
 }
-
+.colorFondo{
+  background-color: #31302F;
+}
 /* Estilos navbar */
 #navegador-index {
   background-color: black !important;
