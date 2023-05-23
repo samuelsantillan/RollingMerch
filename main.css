@@ -81,7 +81,7 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: ;
+    background-color: #9a9693;
     color: var(--clr-main);
     padding: .4rem;
     text-transform: uppercase;
