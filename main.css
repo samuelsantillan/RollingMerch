@@ -24,6 +24,7 @@ ul {
 
 a {
     text-decoration: none;
+ 
 }
 
 .main{
@@ -80,6 +81,7 @@ main {
 }
 
 .producto-agregar {
+    width: 20rem;
     border: 0;
     background-color: #9a9693;
     color: var(--clr-main);
@@ -280,3 +282,4 @@ body{
     background-color:#9A9693!important;
     color:#C10001 !important;
 }
+
