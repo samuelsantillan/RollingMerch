@@ -1,0 +1,29 @@
+*Usuario Admin:
+Email: admin@gmail.com
+Contrasena: Admin123
+
+-----------------------------------------------------------------------------------------
+*Producto para tener cargados:
+-----------------------------------------------------------------------------------------
+Nombre: Botella WaterDog
+Precio: 2000
+Descripcion: Botella verde WaterDog
+Link: https://i.ibb.co/zSypzsY/Whats-App-Image-2023-05-10-at-20-57-20.jpg
+-----------------------------------------------------------------------------------------
+Nombre: Botella de aluminio Rolling
+Precio: 1500
+Descripcion: Botella color negro de aluminio
+Link: https://i.ibb.co/28tZYXJ/Whats-App-Image-2023-05-10-at-20-57-24.jpg
+-----------------------------------------------------------------------------------------
+*Productos para la presentacion:
+-----------------------------------------------------------------------------------------
+Nombre: Libreta Rolling
+Precio: 1200
+Descripcion: Libreta codigo Rolling
+Link: https://i.ibb.co/j30CXzW/Whats-App-Image-2023-05-11-at-00-09-40.jpg
+-----------------------------------------------------------------------------------------
+Nombre: Taza Rolling
+Precio: 1300
+Descripcion: Taza Rolling 
+Link: https://i.ibb.co/F6zqWnf/Whats-App-Image-2023-05-11-at-00-09-39.jpg
+-----------------------------------------------------------------------------------------
