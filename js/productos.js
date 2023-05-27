@@ -28,7 +28,7 @@ fetch("../productos.json")
               <div class="producto-detalles">
                   <h3 class="producto-titulo">${item.nombre}</h3>
                   <p class="producto-precio">$${item.precio}</p>
-                   <a href="./error404.html"> <button class="producto-agregar" id="${item.id}">Agregar</button> </a>                 
+                   <a href="../html/error404.html"> <button class="producto-agregar" id="${item.id}">Agregar</button> </a>                 
               </div>              
               `;
              

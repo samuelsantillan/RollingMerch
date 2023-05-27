@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "Botella deportiva de aluminio ",        
+        "nombre": "Botella deportiva",        
         "precio": "2950",
         "cantidad": 9,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-22-at-18.45.49-500x500.jpeg"
@@ -39,7 +39,7 @@
     },
     {
         "id": 6,
-        "nombre": "Pines RollinCode BLANCO / NEGRO",        
+        "nombre": "Pines RollinCode ",        
         "precio": "650",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2023/04/20230424_135552-500x500.jpg"
