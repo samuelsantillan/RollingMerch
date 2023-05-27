@@ -9,14 +9,14 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(./src/photo-1506318137071-a8e063b4bec0.jpg);
+  background-image: url(../src/photo-1506318137071-a8e063b4bec0.jpg);
   display: flex;
   justify-content: center;
   direction: column;
 }
 @font-face {
   font-family: rolling;
-  src: url(./fonts/AlfaSlabOne-Regular.ttf);
+  src: url(../fonts/AlfaSlabOne-Regular.ttf);
 }
 .contenedor {margin-top: 33vh;
   flex-wrap: wrap;
