@@ -81,7 +81,7 @@ main {
 }
 
 .producto-agregar {
-    width: 20rem;
+    width: 98%;
     border: 0;
     background-color: #9a9693;
     color: var(--clr-main);
