@@ -2,7 +2,7 @@
 
 const user = JSON.parse(localStorage.getItem('login_exitoso')) || false
 if(!user){
-    window.location.href = '../index.html'
+    window.location.href = '../html/error404.html'
 }
 
 //Funcion Cerrar Sesion
