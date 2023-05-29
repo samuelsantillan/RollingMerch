@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "Botella deportiva",        
+        "nombre": "Botella  RollingCode",        
         "precio": "2950",
         "cantidad": 9,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-22-at-18.45.49-500x500.jpeg"
@@ -10,7 +10,7 @@
     {
        
         "id": 2,
-        "nombre": "Gorra Roja RollingCode",        
+        "nombre": "Gorra Roja RC",        
         "precio": "1800",
         "cantidad": 19,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-3-500x500.jpeg"
@@ -18,14 +18,14 @@
     {
         
         "id": 3,
-        "nombre": "Gorra negra RollingCode",        
+        "nombre": "Gorra negra RC",        
         "precio": "1300",
         "cantidad": 19,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.45-AM-500x500.jpeg"
     },
     {
         "id": 4,
-        "nombre": "Libreta",        
+        "nombre": "Libreta de RollingCode",        
         "precio": "2000",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/11/WhatsApp-Image-2021-11-03-at-11.15.46-AM-500x500.jpeg"
@@ -39,14 +39,14 @@
     },
     {
         "id": 6,
-        "nombre": "Pines RollinCode ",        
+        "nombre": "Pines  RollinCode ",        
         "precio": "650",
         "cantidad": 4,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2023/04/20230424_135552-500x500.jpg"
     },
     {
         "id": 7,
-        "nombre": "Taza Coding",        
+        "nombre": "Taza RollingCode",        
         "precio": "2300",
         "cantidad": 14,       
         "imagen":"https://rollingcodeschool.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-11-03-at-11.15.43-AM-2-500x500.jpeg"

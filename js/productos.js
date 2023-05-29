@@ -32,18 +32,28 @@ function cargarCatalogo() {
     contenedorCatalogo.append(div);
 
     const card = document.getElementById("producto-" + item.id);
-    const favoriteBtn = document.createElement('button')
-    favoriteBtn.innerText = 'añadir a favoritos'
+    
+   
+    const favoriteBtn = document.createElement  ('button') 
+    
+    
+
+    favoriteBtn.innerText = 'Favoritos'
+    
+    
     card.append(favoriteBtn)
-
+    
+    
     const { cantidad, ...itemToSave } = item;
-
+    
+    
     favoriteBtn.addEventListener("click", () => {
       addFavorites(itemToSave);
     })
-
+    
   });
 }
+
 
 //Buscar un producto con onclick con modal
 
@@ -98,7 +108,7 @@ const buscarProducto = (producto) => {
           <div class="producto-buscados">
               <h3 class="producto-titulo">${item.nombre}</h3>
               <p class="producto-precio">$${item.precio}</p>
-                <button  class="producto-agregar" id="${item.id}">Agregar</button>                  
+                <button  class="producto-agregar" id="${item.id}">Favoritos</button>                  
           </div>                          
             `;
 

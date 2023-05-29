@@ -1,21 +1,15 @@
 const modalContainer = document.getElementById("modal-container");
-const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
-const showAlert = document.getElementById("showAlert");
-const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 const userLogged = JSON.parse(localStorage.getItem('login_exitoso'));
 
-const wishlists = JSON.parse(localStorage.getItem('wishlists')) || [];
-
-const userWishlist = wishlists.find(list => list.owner === userLogged.email) || {
-  owner: userLogged.email,
-  products: [],
-};
-
-console.log(userLogged, userWishlist);
-
 const addFavorites = (item) => {
+  const wishlists = JSON.parse(localStorage.getItem('wishlists')) || [];
+  const userWishlist = wishlists.find(list => list.owner === userLogged.email) || {
+    owner: userLogged.email,
+    products: [],
+  };
+  
   // AGREGAR ITEM Y CONTROLAR QUE NO EXISTA YA DENTRO DE LA LISTA
   const itemFound = userWishlist.products.find(product => product.id === item.id)
   if (itemFound) {
@@ -33,27 +27,46 @@ const addFavorites = (item) => {
     }
     localStorage.setItem('wishlists', JSON.stringify(wishlists));
   }
+  pintarCarrito();
 }
 
 
 const eliminarProducto = (id) => {
-  console.log(typeof(userWishlist));
-  const updatedWishlist = userWishlist.filter(product => {
+  const wishlists = JSON.parse(localStorage.getItem('wishlists')) || [];
+  const userWishlist = wishlists.find(list => list.owner === userLogged.email) || {
+    owner: userLogged.email,
+    products: [],
+  };
+
+  const updatedProductList = userWishlist.products.filter(product => {
     return product.id !== id;
   });
-
-  console.log(updatedWishlist);
   
-  pintarCarrito();
+  if (updatedProductList) {
+    const updatedWishlist = { ...userWishlist, products: updatedProductList };
+    const listFound = wishlists.find(list => list.owner === updatedWishlist.owner);
+    const index = wishlists.indexOf(listFound);
+    wishlists.splice(index, 1, updatedWishlist)
+    localStorage.setItem('wishlists', JSON.stringify(wishlists));
+    pintarCarrito();
+  } else {
+    alert('nada que borrar')
+  }
 };
 
 const pintarCarrito = () => {
+  const wishlists = JSON.parse(localStorage.getItem('wishlists')) || [];
+  const userWishlist = wishlists.find(list => list.owner === userLogged.email) || {
+    owner: userLogged.email,
+    products: [],
+  };
+
   modalContainer.innerHTML = "";
   modalContainer.style.display = "flex";
   const modalHeader = document.createElement("div");
   modalHeader.className = "modal-header";
   modalHeader.innerHTML = `
-    <h1 class="modal-header-title">Carrito.</h1>
+    <h1 class="modal-header-title">Favoritos</h1>
   `;
   modalContainer.append(modalHeader);
 
@@ -67,7 +80,7 @@ const pintarCarrito = () => {
 
   modalHeader.append(modalbutton);
 
-  if (!userWishlist.products) {
+  if (userWishlist.products.length === 0) {
     const carritoContent = document.createElement("div");
     carritoContent.className = "modal-content";
     carritoContent.innerHTML = `
